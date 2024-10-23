@@ -5,7 +5,7 @@ axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 
 // 创建axios实例，并设置基本配置
 const service = axios.create({
-    baseURL: 'http://192.168.137.1:8081',
+    baseURL: import.meta.env.VITE_APP_BASE_API,
     withCredentials: true,
     timeout: 10000
 });

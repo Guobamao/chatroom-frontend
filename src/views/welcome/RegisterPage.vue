@@ -51,7 +51,11 @@
           </el-input>
         </el-form-item>
       </el-form>
-      <el-button type="success" style="width: 260px" @click="submit">注册</el-button>
+      <div>
+        <el-button type="success" style="width: 260px" @click="submit">注册</el-button>
+        <br>
+        <el-button type="primary" style="width: 260px; margin-top: 10px;" @click="router.push('/')">返回登录</el-button>
+      </div>
     </div>
   </div>
 </template>
